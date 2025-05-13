@@ -5,26 +5,64 @@
   <title>CPI Inflation Chart</title>
   <style>
     body {
-      background-color: #f9f9f9;
-      font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
       margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    img {
-      width: 800px;
-      height: 800px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .image-container {
+      max-width: 95%;
       border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>CPI Inflation Chart</h1>
-  <img src="https://raw.githubusercontent.com/GrandPi224/pete/main/cpi%20inflation%20.jpg" alt="CPI Chart">
+
+  <h1>CPI Inflation Chart (April 2025)</h1>
+
+  <div class="image-container">
+    <a href="https://raw.githubusercontent.com/GrandPi224/pete/main/cpi%20inflation%20.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/GrandPi224/pete/main/cpi%20inflation%20.jpg" alt="CPI Inflation Chart">
+    </a>
+  </div>
+
+  <div class="caption">
+    Click the chart to view full size in a new tab.
+  </div>
+
 </body>
 </html>
